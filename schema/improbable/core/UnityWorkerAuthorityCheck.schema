@@ -1,0 +1,5 @@
+package improbable.core;
+
+component UnityWorkerAuthorityCheck {
+  id = 1001;
+}

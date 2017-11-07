@@ -1,0 +1,10 @@
+package improbable.building;
+
+type HQInfoData {
+  list<EntityId> barracks = 1;
+}
+
+component HQInfo {
+  id = 1700;
+  data HQInfoData;
+}

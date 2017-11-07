@@ -1,0 +1,31 @@
+package improbable.abilities;
+
+import "improbable/standard_library.schema";
+import "improbable/core/Nothing.schema";
+
+enum SpellType {
+  LIGHTNING = 0;
+  RAIN = 1;
+}
+
+type SpellCastRequest {
+  SpellType spell_type = 1;
+  improbable.Coordinates position = 2;
+}
+
+type SpellAnimationEvent {
+  SpellType spell_type = 1;
+  improbable.Coordinates position = 2;
+}
+
+type SpellsData {
+  map<SpellType, float> cooldowns = 1;
+  bool can_cast_spells = 2;
+}
+
+component Spells {
+  id = 1500;
+  data SpellsData;
+  command core.Nothing spell_cast_request(SpellCastRequest);
+  event SpellAnimationEvent spell_animation_event;
+}

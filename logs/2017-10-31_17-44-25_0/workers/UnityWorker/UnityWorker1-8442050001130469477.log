@@ -1,0 +1,76 @@
+Initialize engine version: 5.6.0f3 (497a0f351392)
+Forcing GfxDevice: Null
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\Generated.Code.dll (this message is harmless)
+Loading C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\Generated.Code.dll into Unity Child Domain
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\Improbable.WorkerSdkCsharp.dll (this message is harmless)
+Loading C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\Improbable.WorkerSdkCsharp.dll into Unity Child Domain
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\Improbable.WorkerSdkCsharp.Framework.dll (this message is harmless)
+Loading C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\Improbable.WorkerSdkCsharp.Framework.dll into Unity Child Domain
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\System.Threading.dll (this message is harmless)
+Loading C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\System.Threading.dll into Unity Child Domain
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\Improbable.UnityDll.dll (this message is harmless)
+Loading C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\Improbable.UnityDll.dll into Unity Child Domain
+- Completed reload, in  0.018 seconds
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 0.975928 ms
+Command line C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows.exe +projectName your_project_name_here +receptionistIp 127.0.0.1 +receptionistPort 7777 +workerType UnityWorker +workerId UnityWorker1 +useInternalIpForBridge true +infraServicesUrl http://127.0.0.1:21000 +assemblyName local_assembly +linkProtocol RakNet -logfile C:\Work\Unity\more-wizards\logs\2017-10-31_17-44-25_0\workers\UnityWorker\UnityWorker1-8442050001130469477.log -batchmode -nographics
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WorkerConfiguration settings
+AppName = 
+ProjectName = your_project_name_here
+AssemblyName = local_assembly
+DeploymentId = 
+DeploymentTag = prod
+EngineId = UnityWorker1
+EnginePlatform = UnityWorker
+WorkerId = UnityWorker1
+WorkerPlatform = UnityWorker
+EntityCreationLimitPerFrame = 0
+InfraServiceUrl = http://127.0.0.1:21000
+LocatorHost = locator.improbable.io
+ReceptionistHost = 127.0.0.1
+ReceptionistPort = 7777
+LinkProtocol = RakNet
+LoginToken = 
+ProtocolLoggingOnStartup = False
+ProtocolLogPrefix = protocol-
+ProtocolLogMaxFileBytes = 104857600
+RaknetHeartbeatTimeoutMillis = 60000
+ReceiveQueueCapacity = 32768
+SendQueueCapacity = 16384
+ShowDebugTraces = False
+SteamToken = 
+TcpMultiplexLevel = 32
+UseInstrumentation = False
+UsePerInstanceAssetCache = True
+UsePrefabPooling = True
+LogDebugToSpatialOs = True
+LogAssertToSpatialOs = True
+LogWarningToSpatialOs = True
+LogErrorToSpatialOs = True
+LogExceptionToSpatialOs = True
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\Mono.Security.dll (this message is harmless)
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\System.Configuration.dll (this message is harmless)
+Platform assembly: C:\Users\maest\AppData\Local\Temp\zip-downloader5213745944605979201\701875f97d36b33a4c2e94f1842de5fc\UnityWorker@Windows_Data\Managed\System.Xml.dll (this message is harmless)
