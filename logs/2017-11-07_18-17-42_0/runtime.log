@@ -1,0 +1,1164 @@
+2017-11-07 18:18:05,813 INFO  [i.deployment.InternalGameLauncher] [] [] [] : Parsed 359 internal flags at startup
+2017-11-07 18:18:05,969 INFO  [i.deployment.InternalGameLauncher] [] [] [] : SpatialOS runtime version: 11-20171031T101302Z-7e7e1c1
+2017-11-07 18:18:06,130 INFO  [i.c.c.f.FlagzFieldRegistryUpdater] [] [] [] : Initialized Fabric flagz registry with 11 set fields.
+2017-11-07 18:18:07,262 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.StatusDiscoveryInternalService) on 127.0.0.1:5301.
+2017-11-07 18:18:07,262 INFO  [i.c.discovery.ServiceDiscoveryImpl] [] [] [] : Status discovery address: host: "127.0.0.1"
+port: 5301
+
+2017-11-07 18:18:07,265 INFO  [improbable.module.ModuleNode] [] [] [] : Starting Fabric node as master (IP: 127.0.0.1).
+2017-11-07 18:18:07,267 INFO  [i.c.d.client.CheckpointDiscoveryImpl] [] [] [] : Reached a checkpoint: ALL_NODES_STARTED
+2017-11-07 18:18:07,267 INFO  [improbable.module.ModuleNode] [] [] [] : Node master has started, waiting for other nodes to reach the same checkpoint.
+2017-11-07 18:18:07,268 INFO  [improbable.module.ModuleNode] [] [] [] : All nodes have been started.
+2017-11-07 18:18:07,273 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.ModuleService) on 127.0.0.1:9000.
+2017-11-07 18:18:07,279 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.HealthCheckService) on 127.0.0.1:9001.
+2017-11-07 18:18:07,284 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.PerfInternalService) on 127.0.0.1:9002.
+2017-11-07 18:18:07,289 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.ContentionInternalService) on 127.0.0.1:9003.
+2017-11-07 18:18:07,303 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.FeatureService) on 127.0.0.1:9004.
+2017-11-07 18:18:07,320 INFO  [i.c.config.flagz.WorkerFlagzUpdater] [] [] [] : UnityWorker worker flag 'max_npc_wizards' updated to value '50'.
+2017-11-07 18:18:07,326 INFO  [i.c.config.flagz.WorkerFlagzUpdater] [] [] [] : Initialized worker flagz registry with 1 set fields.
+2017-11-07 18:18:07,326 INFO  [improbable.module.ModuleNode] [] [] [] : Using master node configuration loader.
+2017-11-07 18:18:07,333 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.NodeConfigurationInternalService) on 127.0.0.1:9005.
+2017-11-07 18:18:07,345 INFO  [i.c.c.n.MasterNodeConfigurationLoader] [] [] [] : Using roles [MASTER, GSIM, BRIDGE, WORKER_RUNNER, INSPECTION] for node node_id {
+  deployment_id {
+    project_id {
+      name: "your_project_name_here"
+    }
+    name: "local"
+  }
+  name: "master"
+}
+private_ip: "127.0.0.1"
+roles: MASTER
+roles: GSIM
+roles: BRIDGE
+roles: WORKER_RUNNER
+roles: INSPECTION
+
+2017-11-07 18:18:07,356 INFO  [improbable.core.config.node.GsimGrid] [] [] [] : Created gsim grid configuration of size (1500, 1500) with 1 columns and 1 rows, using gsims of (30, 30) chunks.
+2017-11-07 18:18:07,366 INFO  [i.c.c.n.MasterNodeConfigurationLoader] [] [] [] : Original deployment module configuration (before parsing): {deployment_id {
+  project_id {
+    name: "your_project_name_here"
+  }
+  name: "local"
+}
+name: "master"
+=[ProfilingModule, BridgeModuleOracleModule, BridgeOracleModule, PersistenceModule, ReceptionistModule, RouterModule, GSimModule, BridgeModule, EngineStartupModule, InspectionRestModule]}
+2017-11-07 18:18:07,375 INFO  [i.c.c.n.MasterNodeConfigurationLoader] [] [] [] : Master successfully loaded configurations for 1 node(s).
+2017-11-07 18:18:07,379 INFO  [improbable.module.ModuleNode] [] [] [] : Loaded node configuration: node_id {
+  deployment_id {
+    project_id {
+      name: "your_project_name_here"
+    }
+    name: "local"
+  }
+  name: "master"
+}
+gsim_configurations {
+  extent {
+    bottom_left {
+      x_in_chunks: -15
+      z_in_chunks: -15
+    }
+    top_right {
+      x_in_chunks: 15
+      z_in_chunks: 15
+    }
+  }
+}
+start_router: true
+start_bridge_oracle: true
+start_bridge_module_oracle: true
+start_engine_startup_module: true
+start_receptionist_service: true
+start_inspection_rest_module: true
+start_snapshot_service: true
+start_profiling_module: true
+bridge_modules: "BridgeModule"
+gsim_modules: "GSimModule"
+
+2017-11-07 18:18:07,380 INFO  [improbable.module.ModuleNode] [] [] [] : Using master world extents provider.
+2017-11-07 18:18:07,391 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.WorldExtentsInternalService) on 127.0.0.1:9006.
+2017-11-07 18:18:07,391 INFO  [i.c.world.MasterWorldExtentsProvider] [] [] [] : Successfully initialized world extents with 1 rectangle(s).
+2017-11-07 18:18:07,393 INFO  [improbable.module.ModuleNode] [] [] [] : Loaded world extents: WorldExtents{proto=rectangles {
+  bottom_left {
+    x: -750.0
+    z: -750.0
+  }
+  top_right {
+    x: 750.0
+    z: 750.0
+  }
+  is_fully_simulated: true
+  responsible_gsim_id {
+  }
+}
+bounding_rectangle {
+  bottom_left {
+    x: -750.0
+    z: -750.0
+  }
+  top_right {
+    x: 750.0
+    z: 750.0
+  }
+  is_fully_simulated: true
+}
+}
+2017-11-07 18:18:07,489 INFO  [i.e.schema.ParsedFileDescriptorSet] [] [] [] : Parsed file descriptors of 28 proto files.
+2017-11-07 18:18:07,516 INFO  [i.entity.schema.SchemaFactory] [] [] [] : Found components: [improbable.player.PlayerControls, improbable.fire.Flammable, improbable.abilities.Spells, improbable.tree.TreeState, improbable.core.ConnectionHeartbeat, improbable.life.Health, improbable.EntityAcl, improbable.Metadata, improbable.Position, improbable.Persistence, improbable.building.StockpileDepository, improbable.core.TransformComponent, improbable.npc.TargetNavigation, improbable.team.TeamAssignment, improbable.player.PlayerInfo, improbable.core.ClientAuthorityCheck, improbable.core.UnityWorkerAuthorityCheck, improbable.npc.NPCLumberjack, improbable.building.BarracksInfo, improbable.building.HQInfo, improbable.global.PlayerSpawning, improbable.building.NPCSpawner, improbable.core.Inventory, improbable.npc.NPCWizard, improbable.tree.Harvestable]
+2017-11-07 18:18:07,522 INFO  [i.entity.schema.SchemaFactory] [] [] [] : Found components: [improbable.building.StockpileDepository, improbable.EntityAcl, improbable.Metadata, improbable.Position, improbable.Persistence, improbable.npc.NPCWizard, improbable.core.ClientAuthorityCheck, improbable.core.TransformComponent, improbable.building.BarracksInfo, improbable.internal.EntityAuthority, improbable.fire.Flammable, improbable.npc.TargetNavigation, improbable.core.ConnectionHeartbeat, improbable.npc.NPCLumberjack, improbable.core.UnityWorkerAuthorityCheck, improbable.life.Health, improbable.player.PlayerInfo, improbable.global.PlayerSpawning, improbable.player.PlayerControls, improbable.core.Inventory, improbable.tree.TreeState, improbable.building.NPCSpawner, improbable.building.HQInfo, improbable.abilities.Spells, improbable.team.TeamAssignment, improbable.tree.Harvestable]
+2017-11-07 18:18:07,523 INFO  [improbable.module.ModuleNode] [] [] [] : Successfully loaded schema for entities
+2017-11-07 18:18:07,525 INFO  [improbable.module.ModuleNode] [] [] [] : Validating snapshot at startup and determining max entity id
+2017-11-07 18:18:07,528 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Requesting download URL for Snapshot(local@latest) matching []
+2017-11-07 18:18:07,552 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Downloading snapshot from http://127.0.0.1:21000/snapshots/20171107181731313
+2017-11-07 18:18:07,845 INFO  [improbable.module.ModuleNode] [] [] [] : Determined the first entity id for the id assigner as 2
+2017-11-07 18:18:07,850 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.EntityIdInternalService) on 127.0.0.1:9007.
+2017-11-07 18:18:07,888 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.WorkerPrestartRegistryInternalService) on 127.0.0.1:9008.
+2017-11-07 18:18:07,899 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.RouterLookupInternalService) on 127.0.0.1:9009.
+2017-11-07 18:18:07,900 INFO  [i.module.router.ActorSystemFactory$] [] [] [] : Attempting to create ActorSystem akkaFabric with configRecord akkaFabric
+2017-11-07 18:18:08,118 INFO  [akka.event.slf4j.Slf4jLogger] [] [] [] : Slf4jLogger started
+2017-11-07 18:18:08,208 INFO  [i.c.d.g.GlobalCheckpointDiscoveryImpl] [] [] [] : Global checkpoint discovery refreshed checkpoints.
+2017-11-07 18:18:08,208 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 11 server(s) (previously: 0)
+2017-11-07 18:18:09,118 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : Parsed 1 worker loadbalancing configuration(s)
+2017-11-07 18:18:09,120 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : Successfully loaded loadbalancing configurations: {UnityWorker=improbable.loadbalancing.params.DynamicLoadbalancerParams@1ef8e0c8}
+2017-11-07 18:18:09,192 INFO  [i.w.a.WorkerAssemblyProviderFactory] [] [] [] : Loaded worker assemblies for these workers types: UnityWorker, UnityClient.
+2017-11-07 18:18:09,194 INFO  [improbable.module.ModuleNode] [] [] [] : Loaded worker assemblies: [worker_assembly_id {
+  assembly_id {
+    project_id {
+      name: "your_project_name_here"
+    }
+    name: "local_assembly"
+  }
+  name {
+    name: "UnityWorker"
+  }
+}
+worker_launch_configuration {
+  platform: WINDOWS
+  worker_zip {
+    command: "UnityWorker@Windows.exe"
+    argument: "+projectName"
+    argument: "${IMPROBABLE_PROJECT_NAME}"
+    argument: "+receptionistIp"
+    argument: "${IMPROBABLE_RECEPTIONIST_HOST}"
+    argument: "+receptionistPort"
+    argument: "${IMPROBABLE_RECEPTIONIST_PORT}"
+    argument: "+workerType"
+    argument: "${IMPROBABLE_WORKER_NAME}"
+    argument: "+workerId"
+    argument: "${IMPROBABLE_WORKER_ID}"
+    argument: "+useInternalIpForBridge"
+    argument: "true"
+    argument: "+infraServicesUrl"
+    argument: "${IMPROBABLE_API_URL}"
+    argument: "+assemblyName"
+    argument: "${IMPROBABLE_ASSEMBLY_NAME}"
+    argument: "+linkProtocol"
+    argument: "RakNet"
+    argument: "-logfile"
+    argument: "${IMPROBABLE_LOG_FILE}"
+    argument: "-batchmode"
+    argument: "-nographics"
+    worker_location {
+      filename: "UnityWorker@Windows.zip"
+    }
+  }
+}
+worker_launch_configuration {
+  platform: MACOS
+  worker_zip {
+    command: "UnityWorker@Mac.app/Contents/MacOS/UnityWorker@Mac"
+    argument: "+projectName"
+    argument: "${IMPROBABLE_PROJECT_NAME}"
+    argument: "+receptionistIp"
+    argument: "${IMPROBABLE_RECEPTIONIST_HOST}"
+    argument: "+receptionistPort"
+    argument: "${IMPROBABLE_RECEPTIONIST_PORT}"
+    argument: "+workerType"
+    argument: "${IMPROBABLE_WORKER_NAME}"
+    argument: "+workerId"
+    argument: "${IMPROBABLE_WORKER_ID}"
+    argument: "+useInternalIpForBridge"
+    argument: "true"
+    argument: "+infraServicesUrl"
+    argument: "${IMPROBABLE_API_URL}"
+    argument: "+assemblyName"
+    argument: "${IMPROBABLE_ASSEMBLY_NAME}"
+    argument: "+linkProtocol"
+    argument: "RakNet"
+    argument: "-logfile"
+    argument: "${IMPROBABLE_LOG_FILE}"
+    argument: "-batchmode"
+    argument: "-nographics"
+    worker_location {
+      filename: "UnityWorker@Mac.zip"
+    }
+  }
+}
+worker_launch_configuration {
+  platform: LINUX
+  worker_zip {
+    command: "UnityWorker@Linux"
+    argument: "+projectName"
+    argument: "${IMPROBABLE_PROJECT_NAME}"
+    argument: "+receptionistIp"
+    argument: "${IMPROBABLE_RECEPTIONIST_HOST}"
+    argument: "+receptionistPort"
+    argument: "${IMPROBABLE_RECEPTIONIST_PORT}"
+    argument: "+workerType"
+    argument: "${IMPROBABLE_WORKER_NAME}"
+    argument: "+workerId"
+    argument: "${IMPROBABLE_WORKER_ID}"
+    argument: "+useInternalIpForBridge"
+    argument: "true"
+    argument: "+infraServicesUrl"
+    argument: "${IMPROBABLE_API_URL}"
+    argument: "+assemblyName"
+    argument: "${IMPROBABLE_ASSEMBLY_NAME}"
+    argument: "+linkProtocol"
+    argument: "RakNet"
+    argument: "-logfile"
+    argument: "${IMPROBABLE_LOG_FILE}"
+    argument: "-batchmode"
+    argument: "-nographics"
+    worker_location {
+      filename: "UnityWorker@Linux.zip"
+    }
+  }
+}
+bridge_configuration {
+  worker_attribute_set {
+    attribute {
+      name: "physics"
+    }
+  }
+  entity_interest {
+    range_entity_interest {
+      radius: 2.0
+    }
+  }
+  component_delivery {
+    checkout_all_initially: true
+  }
+}
+, worker_assembly_id {
+  assembly_id {
+    project_id {
+      name: "your_project_name_here"
+    }
+    name: "local_assembly"
+  }
+  name {
+    name: "UnityClient"
+  }
+}
+bridge_configuration {
+  worker_attribute_set {
+    attribute {
+      name: "visual"
+    }
+  }
+  entity_interest {
+    range_entity_interest {
+      radius: 3.0
+    }
+  }
+  streaming_query {
+    global_component_streaming_query {
+      component_name: "improbable.building.HQInfo"
+    }
+  }
+  component_delivery {
+    checkout_all_initially: true
+  }
+}
+]
+2017-11-07 18:18:09,197 INFO  [i.w.assembly.WorkerAssemblyProvider] [] [] [] : Worker configuration for 'UnityClient' does not contain a launch configuration for the current platform 'WINDOWS', so Fabric will not start any managed workers of this type
+2017-11-07 18:18:09,198 INFO  [i.w.assembly.WorkerAssemblyProvider] [] [] [] : The following worker configurations do not contain valid managed launch configurations for the current platform WINDOWS, and the runtime will be unable to launch managed workers of this type: [UnityClient]. This is expected for worker types you intend to only connect manually.
+2017-11-07 18:18:09,199 INFO  [i.w.permissions.PermissionsFactory] [] [] [] : Created permissions manager with permissions: {UnityWorker=Permissions{{/sys/CreateEntity=, /sys/DeleteEntity=, /sys/EntityQuery={"component":["*"]}}}, UnityClient=Permissions{{/sys/EntityQuery={"component":[]}}}}
+2017-11-07 18:18:11,041 INFO  [improbable.module.ModuleNode] [] [] [] : Starting router on master
+2017-11-07 18:18:11,046 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.RouterInternalService) on 127.0.0.1:9010.
+2017-11-07 18:18:11,046 INFO  [i.c.m.r.RouterInternalServiceImpl] [] [] [] : Attempting to register RouterInternalServiceImpl with RouterLookupInternalService.
+2017-11-07 18:18:11,053 INFO  [i.c.m.r.l.RouterLookupInternalServiceImpl] [] [] [] : 1/1 router modules started
+2017-11-07 18:18:11,054 INFO  [i.c.m.r.RouterInternalServiceImpl] [] [] [] : Registered RouterInternalServiceImpl with RouterLookupInternalService.
+2017-11-07 18:18:11,055 INFO  [improbable.module.ModuleNode] [] [] [] : Attempting to get addresses of all RouterModules from master node
+2017-11-07 18:18:11,062 INFO  [improbable.module.ModuleNode] [] [] [] : Got all RouterModules from master node
+2017-11-07 18:18:11,074 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.RemoteMessageInternalService) on 127.0.0.1:9011.
+2017-11-07 18:18:11,083 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.LocalBrokerInternalService) on 127.0.0.1:9012.
+2017-11-07 18:18:11,087 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for all router modules in the deployment to have started
+2017-11-07 18:18:11,089 INFO  [improbable.module.ModuleNode] [] [] [] : All router modules in the deployment started
+2017-11-07 18:18:11,161 INFO  [org.eclipse.jetty.server.Server] [] [] [] : jetty-8.y.z-SNAPSHOT
+2017-11-07 18:18:11,181 INFO  [o.e.jetty.server.AbstractConnector] [] [] [] : Started SelectChannelConnector@0.0.0.0:5006
+2017-11-07 18:18:11,182 INFO  [improbable.http.ServletContainer$] [] [] [] : Servlet container started
+2017-11-07 18:18:11,183 INFO  [improbable.module.ModuleNode] [] [] [] : Starting BridgeOracle on master
+2017-11-07 18:18:11,189 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for the BridgeOracle to have started
+2017-11-07 18:18:11,193 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 14 server(s) (previously: 11)
+2017-11-07 18:18:11,311 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.BridgeOracleInternalService) on 127.0.0.1:9013.
+2017-11-07 18:18:12,193 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 15 server(s) (previously: 14)
+2017-11-07 18:18:12,193 INFO  [improbable.module.ModuleNode] [] [] [] : Received BridgeOracle started
+2017-11-07 18:18:12,200 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.GlobalBrokerInternalService) on 127.0.0.1:9014.
+2017-11-07 18:18:12,201 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for the BridgeModuleOracle to have started
+2017-11-07 18:18:12,203 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started BridgeModuleOracleActor(Actor[akka://akkaFabric/user/BridgeModuleOracleModule#-118204828]).
+2017-11-07 18:18:12,214 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.BridgeServiceOracleInternalService) on 127.0.0.1:9015.
+2017-11-07 18:18:13,205 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 17 server(s) (previously: 15)
+2017-11-07 18:18:13,205 INFO  [improbable.module.ModuleNode] [] [] [] : Received BridgeModuleOracle started
+2017-11-07 18:18:13,214 INFO  [improbable.module.ModuleNode] [] [] [] : Starting gsim GSimModule
+2017-11-07 18:18:13,222 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for 1 entity query service(s) to start.
+2017-11-07 18:18:13,266 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.fabric.internal.service.ScalingStatsInternalService) on 127.0.0.1:9016.
+2017-11-07 18:18:13,274 INFO  [i.p.gsim.GSimPersistenceWriter] [] [] [] : Transitioning GSimPersistenceActor(0) from State [Idle] to [Idle].  Time Elapsed: 2 milliseconds
+2017-11-07 18:18:13,284 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.EntityQueryInternalService) on 127.0.0.1:9017.
+2017-11-07 18:18:13,301 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Skipping reconciliation because no WorkerRunner service is available. This message is expected at startup but should not persist through the deployment
+2017-11-07 18:18:14,197 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 19 server(s) (previously: 17)
+2017-11-07 18:18:14,197 INFO  [improbable.module.ModuleNode] [] [] [] : All 1 entity query service(s) have started.
+2017-11-07 18:18:14,198 INFO  [improbable.module.ModuleNode] [] [] [] : Creating entity query client.
+2017-11-07 18:18:14,214 INFO  [improbable.module.ModuleNode] [] [] [] : Entity query client created with directory: EntityQueryServiceDirectory{allServices=[EntityQueryInternalServiceInfo{address=host: "127.0.0.1"
+port: 9017
+, extent=Rectangle{minX=-750.0, minZ=-750.0, maxX=750.0, maxZ=750.0}, isLocal=true}], localServices=[EntityQueryInternalServiceInfo{address=host: "127.0.0.1"
+port: 9017
+, extent=Rectangle{minX=-750.0, minZ=-750.0, maxX=750.0, maxZ=750.0}, isLocal=true}], remoteServices=[]}
+2017-11-07 18:18:14,220 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for 1 bridge service(s) to start.
+2017-11-07 18:18:14,277 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started BridgeModuleActor(Actor[akka://akkaFabric/user/BridgeModule:3b720401-9f35-451f-ba1f-c3303ac38f8c#-1013087844]).
+2017-11-07 18:18:14,288 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.BridgeInternalService) on 127.0.0.1:9018.
+2017-11-07 18:18:14,288 INFO  [i.module.bridge.BridgeModuleActor] [] [] [] : Waiting for BridgeModuleOracle service to be available
+2017-11-07 18:18:14,303 INFO  [i.module.bridge.BridgeModuleActor] [] [] [] : Registered(BridgeModuleEndpoint(3b720401-9f35-451f-ba1f-c3303ac38f8c)) on BridgeModuleOracleService
+2017-11-07 18:18:15,198 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 20 server(s) (previously: 19)
+2017-11-07 18:18:15,198 INFO  [improbable.module.ModuleNode] [] [] [] : All 1 bridge service(s) have started.
+2017-11-07 18:18:15,198 INFO  [improbable.module.ModuleNode] [] [] [] : Starting WorkerRunner service (EngineStartupModule)
+2017-11-07 18:18:15,206 INFO  [improbable.worker.exec.WorkerStats] [] [] [] : Cannot read /proc/self/stat; worker stats reporting will not work.
+2017-11-07 18:18:15,220 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.inner.worker.WorkerRunner) on 127.0.0.1:9019.
+2017-11-07 18:18:15,233 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.ReceptionistInternalService) on 127.0.0.1:9020.
+2017-11-07 18:18:15,244 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.ReceptionistService) on 127.0.0.1:7777.
+2017-11-07 18:18:15,245 INFO  [improbable.module.ModuleNode] [] [] [] : Starting InspectionRestModule
+2017-11-07 18:18:15,246 INFO  [improbable.module.ModuleNode] [] [] [] : Starting ProfilingModule
+2017-11-07 18:18:15,249 INFO  [i.c.d.client.CheckpointDiscoveryImpl] [] [] [] : Reached a checkpoint: ALL_MODULES_STARTED
+2017-11-07 18:18:15,249 INFO  [improbable.module.ModuleNode] [] [] [] : All modules on this node started, waiting for other nodes to reach the same checkpoint.
+2017-11-07 18:18:15,255 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started ProfilingModuleActor(Actor[akka://akkaFabric/user/ProfilingModule#1904621510]).
+2017-11-07 18:18:15,260 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.debug.HeatmapCellCacheInternalService) on 127.0.0.1:9021.
+2017-11-07 18:18:15,286 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.InspectionService) on 127.0.0.1:9022.
+2017-11-07 18:18:15,300 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Skipping reconciliation because no WorkerRunner service is available. This message is expected at startup but should not persist through the deployment
+2017-11-07 18:18:15,326 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started InspectionRestModuleActor(Actor[akka://akkaFabric/user/InspectionRestModule#607349212]).
+2017-11-07 18:18:15,582 INFO  [spray.can.server.HttpListener] [akka://akkaFabric/user/IO-HTTP/listener-0] [akkaFabric-akka.actor.default-dispatcher-3] [] : Bound to /0.0.0.0:5005
+2017-11-07 18:18:16,192 INFO  [improbable.module.ModuleNode] [] [] [] : All modules on all nodes have been started.
+2017-11-07 18:18:16,192 INFO  [i.c.d.g.GlobalCheckpointDiscoveryImpl] [] [] [] : Global checkpoint discovery refreshed checkpoints.
+2017-11-07 18:18:16,192 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 25 server(s) (previously: 20)
+2017-11-07 18:18:16,192 INFO  [improbable.module.ModuleNode] [] [] [] : Loading a snapshot.
+2017-11-07 18:18:16,199 INFO  [i.p.g.GSimPersistenceLoadOrchestrator] [] [] [] : Loading snapshot on GSim(0).
+2017-11-07 18:18:16,200 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Requesting download URL for Snapshot(local@latest) matching []
+2017-11-07 18:18:16,204 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Downloading snapshot from http://127.0.0.1:21000/snapshots/20171107181731313
+2017-11-07 18:18:16,207 INFO  [i.p.gsim.GSimPersistenceLoader] [] [] [] : Loading snapshot
+2017-11-07 18:18:16,215 INFO  [i.p.g.GSimPersistenceLoadOrchestrator] [] [] [] : Loaded 1 entities on GSim(0).
+2017-11-07 18:18:16,216 INFO  [i.p.c.PersistenceLoaderCoordinatorActor] [] [] [] : All Snapshots loaded.
+2017-11-07 18:18:16,216 INFO  [improbable.module.ModuleNode] [] [] [] : Snapshot has been loaded.
+2017-11-07 18:18:16,216 INFO  [improbable.module.ModuleNode] [] [] [] : Starting SnapshotService.
+2017-11-07 18:18:16,223 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.SnapshotService) on 127.0.0.1:9023.
+2017-11-07 18:18:16,223 INFO  [i.c.d.client.CheckpointDiscoveryImpl] [] [] [] : Reached a checkpoint: LOAD_SNAPSHOT_FINISHED
+2017-11-07 18:18:16,223 INFO  [improbable.module.ModuleNode] [] [] [] : SpatialOS runtime startup complete.
+2017-11-07 18:18:16,251 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : LoadbalancerParams for worker type [UnityWorker]: [DynamicLoadbalancerParams{energyLimitingEnabled=true, energyLimit=1.0E9, minWorkerRange=500.0, maxWorkerRange=1000.0, maxWorkerStepSize=200.0, workerExpansionTimeMs=60000, workerGridSize=0, loadbalancerEnabled=true, hexGridMode=OFF, scalerAdvisorType=CONSTANT, maxWorkers=2, initialWorkers=2, numEntitiesPerWorker=0, statusReportPeriodMs=2000, pointsOfInterestEnabled=false, hexGridSolution=Empty, pointsOfInterestSolution=Empty}]
+2017-11-07 18:18:17,193 INFO  [i.c.d.g.GlobalCheckpointDiscoveryImpl] [] [] [] : Global checkpoint discovery refreshed checkpoints.
+2017-11-07 18:18:17,194 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 26 server(s) (previously: 25)
+2017-11-07 18:18:18,264 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Trying to start managed worker UnityWorker0
+2017-11-07 18:18:18,284 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Awaiting internal receptionist service to register with service discovery
+2017-11-07 18:18:18,285 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Trying to start managed worker UnityWorker1
+2017-11-07 18:18:18,287 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Successfully found the internal receptionist service in service discovery
+2017-11-07 18:18:18,287 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Starting 2 new managed workers for attribute_set {
+  attribute: "physics"
+}
+ (required: 2, existing: 0)
+2017-11-07 18:18:18,290 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Awaiting internal receptionist service to register with service discovery
+2017-11-07 18:18:18,291 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Successfully found the internal receptionist service in service discovery
+2017-11-07 18:18:18,292 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Awaiting public receptionist service to register with service discovery
+2017-11-07 18:18:18,293 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Successfully found the public receptionist service in service discovery
+2017-11-07 18:18:18,293 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Awaiting public receptionist service to register with service discovery
+2017-11-07 18:18:18,295 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Successfully found the public receptionist service in service discovery
+2017-11-07 18:18:19,525 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Created log file for worker UnityWorker0, type (UnityWorker): [D:\spatialOS - unity -Projects\Astroids\logs\2017-11-07_18-17-42_0\workers\UnityWorker\UnityWorker0-8499621600726798661.log]
+2017-11-07 18:18:19,526 INFO  [i.worker.exec.CommandLineExecutor] [] [] [] : Running command: C:\Users\Home\AppData\Local\Temp\zip-downloader7236840265429172959\f7c9bd5fc0f1aa40f9ef84d336172f81\UnityWorker@Windows.exe +projectName your_project_name_here +receptionistIp 127.0.0.1 +receptionistPort 7777 +workerType UnityWorker +workerId UnityWorker0 +useInternalIpForBridge true +infraServicesUrl http://127.0.0.1:21000 +assemblyName local_assembly +linkProtocol RakNet -logfile D:\spatialOS - unity -Projects\Astroids\logs\2017-11-07_18-17-42_0\workers\UnityWorker\UnityWorker0-8499621600726798661.log -batchmode -nographics
+2017-11-07 18:18:19,574 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Created log file for worker UnityWorker1, type (UnityWorker): [D:\spatialOS - unity -Projects\Astroids\logs\2017-11-07_18-17-42_0\workers\UnityWorker\UnityWorker1-7993112302350665643.log]
+2017-11-07 18:18:19,575 INFO  [i.worker.exec.CommandLineExecutor] [] [] [] : Running command: C:\Users\Home\AppData\Local\Temp\zip-downloader7236840265429172959\f7c9bd5fc0f1aa40f9ef84d336172f81\UnityWorker@Windows.exe +projectName your_project_name_here +receptionistIp 127.0.0.1 +receptionistPort 7777 +workerType UnityWorker +workerId UnityWorker1 +useInternalIpForBridge true +infraServicesUrl http://127.0.0.1:21000 +assemblyName local_assembly +linkProtocol RakNet -logfile D:\spatialOS - unity -Projects\Astroids\logs\2017-11-07_18-17-42_0\workers\UnityWorker\UnityWorker1-7993112302350665643.log -batchmode -nographics
+2017-11-07 18:18:20,567 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityWorker0 via rpc
+2017-11-07 18:18:20,567 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityWorker1 via rpc
+2017-11-07 18:18:20,572 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Selected legacy_guid: "3b720401-9f35-451f-ba1f-c3303ac38f8c"
+address {
+  host: "127.0.0.1"
+  port: 9018
+}
+ with position  which is the nearest bridge service to position (-335.564894008367, 0.0, -353.83765487821285)
+2017-11-07 18:18:20,572 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Selected legacy_guid: "3b720401-9f35-451f-ba1f-c3303ac38f8c"
+address {
+  host: "127.0.0.1"
+  port: 9018
+}
+ with position  which is the nearest bridge service to position (138.47357344728562, 0.0, 338.4079437917742)
+2017-11-07 18:18:20,577 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "3b720401-9f35-451f-ba1f-c3303ac38f8c"
+address {
+  host: "127.0.0.1"
+  port: 9018
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),0)].get().toString() for Engine(UnityWorker0)
+2017-11-07 18:18:20,577 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "3b720401-9f35-451f-ba1f-c3303ac38f8c"
+address {
+  host: "127.0.0.1"
+  port: 9018
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),0)].get().toString() for Engine(UnityWorker1)
+2017-11-07 18:18:20,798 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityWorker0"
+ registered with bridge internal service
+2017-11-07 18:18:20,798 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityWorker1"
+ registered with bridge internal service
+2017-11-07 18:18:20,805 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityWorker1"
+
+2017-11-07 18:18:20,805 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityWorker1 registered with SpatialOS successfully.
+2017-11-07 18:18:20,805 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-07 18:18:20,806 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityWorker1) started.
+2017-11-07 18:18:20,810 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Worker UnityWorker1 registered with the BridgeOracleWorker manager
+2017-11-07 18:18:20,815 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityWorker0"
+
+2017-11-07 18:18:20,815 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityWorker0 registered with SpatialOS successfully.
+2017-11-07 18:18:20,815 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-07 18:18:20,815 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityWorker0) started.
+2017-11-07 18:18:20,815 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Worker UnityWorker0 registered with the BridgeOracleWorker manager
+2017-11-07 18:18:21,392 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-07 18:18:21,411 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-07 18:19:02,897 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityCliente6902d91-8514-4d68-a4d9-eb9e08405bd0 via rpc
+2017-11-07 18:19:02,898 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityCliente6902d91-8514-4d68-a4d9-eb9e08405bd0 without a position hint, so using a random bridge service
+2017-11-07 18:19:02,899 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "3b720401-9f35-451f-ba1f-c3303ac38f8c"
+address {
+  host: "127.0.0.1"
+  port: 9018
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),2)].get().toString() for Engine(UnityCliente6902d91-8514-4d68-a4d9-eb9e08405bd0)
+2017-11-07 18:19:02,922 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : LoadbalancerParams for worker type [UnityClient]: [FlagzLoadbalancerParams{energyLimitingEnabled=true, energyLimit=1.0E9, minWorkerRange=Infinity, maxWorkerRange=Infinity, maxWorkerStepSize=50.0, workerExpansionTimeMs=60000, workerGridSize=5, loadbalancerEnabled=true, hexGridMode=OFF, scalerAdvisorType=ENTITY_COUNT, maxWorkers=25, initialWorkers=25, numEntitiesPerWorker=9223372036854775807, statusReportPeriodMs=2000, pointsOfInterestEnabled=false, hexGridSolution=Empty, pointsOfInterestSolution=Empty}]
+2017-11-07 18:19:02,942 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityCliente6902d91-8514-4d68-a4d9-eb9e08405bd0"
+ registered with bridge internal service
+2017-11-07 18:19:02,943 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityCliente6902d91-8514-4d68-a4d9-eb9e08405bd0"
+
+2017-11-07 18:19:02,943 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityCliente6902d91-8514-4d68-a4d9-eb9e08405bd0 registered with SpatialOS successfully.
+2017-11-07 18:19:02,943 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-07 18:19:02,944 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityCliente6902d91-8514-4d68-a4d9-eb9e08405bd0) started.
+2017-11-07 18:19:03,524 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-07 18:19:03,914 ERROR [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] Failed to get component reference on Player(Clone)
+ in  -[WorkerLogger:Unity]
+2017-11-07 18:19:46,379 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityCliente6902d91-8514-4d68-a4d9-eb9e08405bd0) sending Disconnected to akka://akkaFabric/user/BridgeModule:3b720401-9f35-451f-ba1f-c3303ac38f8c/BridgeActor-UnityCliente6902d91-8514-4d68-a4d9-eb9e08405bd0
+2017-11-07 18:19:46,386 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityCliente6902d91-8514-4d68-a4d9-eb9e08405bd0)
+2017-11-07 18:19:46,387 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityCliente6902d91-8514-4d68-a4d9-eb9e08405bd0) stopped.
+2017-11-07 18:19:46,387 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityCliente6902d91-8514-4d68-a4d9-eb9e08405bd0"
+ unregistered with bridge internal service
+2017-11-07 18:19:46,387 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityCliente6902d91-8514-4d68-a4d9-eb9e08405bd0) on BridgeModuleEndpoint(3b720401-9f35-451f-ba1f-c3303ac38f8c) stopped.
+2017-11-07 18:19:46,944 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-5] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-07 18:19:47,943 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-5] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [2] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-07 18:19:48,943 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-5] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [3] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-07 18:19:49,942 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-5] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [4] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-07 18:19:50,943 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-5] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [5] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-07 18:19:51,943 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-5] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [6] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-07 18:19:52,942 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-5] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [7] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-07 18:19:53,943 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-5] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [8] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-07 18:19:54,942 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-5] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [9] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-07 18:19:55,943 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-5] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [10] dead letters encountered, no more dead letters will be logged. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-07 18:23:26,485 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClient60f938fb-c4fb-4463-bbd5-22df25742332 via rpc
+2017-11-07 18:23:26,485 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClient60f938fb-c4fb-4463-bbd5-22df25742332 without a position hint, so using a random bridge service
+2017-11-07 18:23:26,486 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "3b720401-9f35-451f-ba1f-c3303ac38f8c"
+address {
+  host: "127.0.0.1"
+  port: 9018
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),2)].get().toString() for Engine(UnityClient60f938fb-c4fb-4463-bbd5-22df25742332)
+2017-11-07 18:23:26,513 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient60f938fb-c4fb-4463-bbd5-22df25742332"
+ registered with bridge internal service
+2017-11-07 18:23:26,514 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClient60f938fb-c4fb-4463-bbd5-22df25742332"
+
+2017-11-07 18:23:26,515 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClient60f938fb-c4fb-4463-bbd5-22df25742332 registered with SpatialOS successfully.
+2017-11-07 18:23:26,515 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-07 18:23:26,515 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient60f938fb-c4fb-4463-bbd5-22df25742332) started.
+2017-11-07 18:23:27,112 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-07 18:27:17,982 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClient60f938fb-c4fb-4463-bbd5-22df25742332) sending Disconnected to akka://akkaFabric/user/BridgeModule:3b720401-9f35-451f-ba1f-c3303ac38f8c/BridgeActor-UnityClient60f938fb-c4fb-4463-bbd5-22df25742332
+2017-11-07 18:27:17,985 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient60f938fb-c4fb-4463-bbd5-22df25742332"
+ unregistered with bridge internal service
+2017-11-07 18:27:17,986 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClient60f938fb-c4fb-4463-bbd5-22df25742332) on BridgeModuleEndpoint(3b720401-9f35-451f-ba1f-c3303ac38f8c) stopped.
+2017-11-07 18:27:17,986 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClient60f938fb-c4fb-4463-bbd5-22df25742332)
+2017-11-07 18:27:17,988 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient60f938fb-c4fb-4463-bbd5-22df25742332) stopped.
+2017-11-07 18:27:24,429 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClientd330f0f3-e6eb-4977-9eb6-3a199b7c8237 via rpc
+2017-11-07 18:27:24,429 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClientd330f0f3-e6eb-4977-9eb6-3a199b7c8237 without a position hint, so using a random bridge service
+2017-11-07 18:27:24,430 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "3b720401-9f35-451f-ba1f-c3303ac38f8c"
+address {
+  host: "127.0.0.1"
+  port: 9018
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),2)].get().toString() for Engine(UnityClientd330f0f3-e6eb-4977-9eb6-3a199b7c8237)
+2017-11-07 18:27:24,456 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClientd330f0f3-e6eb-4977-9eb6-3a199b7c8237"
+ registered with bridge internal service
+2017-11-07 18:27:24,457 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClientd330f0f3-e6eb-4977-9eb6-3a199b7c8237"
+
+2017-11-07 18:27:24,457 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClientd330f0f3-e6eb-4977-9eb6-3a199b7c8237 registered with SpatialOS successfully.
+2017-11-07 18:27:24,457 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-07 18:27:24,457 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClientd330f0f3-e6eb-4977-9eb6-3a199b7c8237) started.
+2017-11-07 18:27:25,005 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-07 18:29:55,083 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClientd330f0f3-e6eb-4977-9eb6-3a199b7c8237) sending Disconnected to akka://akkaFabric/user/BridgeModule:3b720401-9f35-451f-ba1f-c3303ac38f8c/BridgeActor-UnityClientd330f0f3-e6eb-4977-9eb6-3a199b7c8237
+2017-11-07 18:29:55,085 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClientd330f0f3-e6eb-4977-9eb6-3a199b7c8237"
+ unregistered with bridge internal service
+2017-11-07 18:29:55,086 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClientd330f0f3-e6eb-4977-9eb6-3a199b7c8237) on BridgeModuleEndpoint(3b720401-9f35-451f-ba1f-c3303ac38f8c) stopped.
+2017-11-07 18:29:55,086 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClientd330f0f3-e6eb-4977-9eb6-3a199b7c8237)
+2017-11-07 18:29:55,086 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClientd330f0f3-e6eb-4977-9eb6-3a199b7c8237) stopped.
+2017-11-07 18:41:16,995 ERROR [io.grpc.netty.NettyServerTransport] [] [] [] : Transport failed
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_131]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) [fabric__runtime_deploy.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2017-11-07 18:41:16,995 ERROR [io.grpc.netty.NettyServerTransport] [] [] [] : Transport failed
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_131]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) [fabric__runtime_deploy.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2017-11-07 18:41:16,995 ERROR [io.grpc.netty.NettyServerTransport] [] [] [] : Transport failed
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_131]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) [fabric__runtime_deploy.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2017-11-07 18:41:16,995 ERROR [io.grpc.netty.NettyServerTransport] [] [] [] : Transport failed
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_131]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) [fabric__runtime_deploy.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2017-11-07 18:41:16,995 ERROR [io.grpc.netty.NettyServerTransport] [] [] [] : Transport failed
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_131]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496) [fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) [fabric__runtime_deploy.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2017-11-07 18:41:16,995 WARN  [i.c.config.flagz.WorkerFlagzUpdater] [] [] [] : Worker flagz update stream failed.
+io.grpc.StatusRuntimeException: UNAVAILABLE
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:395) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) [fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_131]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[fabric__runtime_deploy.jar:na]
+	... 1 common frames omitted
+2017-11-07 18:41:16,995 WARN  [i.c.c.f.FlagzFieldRegistryUpdater] [] [] [] : Fabric flagz update stream failed.
+io.grpc.StatusRuntimeException: UNAVAILABLE
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:395) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) [fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_131]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[fabric__runtime_deploy.jar:na]
+	... 1 common frames omitted
+2017-11-07 18:41:16,997 INFO  [i.c.config.flagz.WorkerFlagzUpdater] [] [] [] : Exponential backoff of 0 seconds after retry 1 of refreshing worker flagz.
+2017-11-07 18:41:16,997 INFO  [i.c.c.f.FlagzFieldRegistryUpdater] [] [] [] : Exponential backoff of 0 seconds after retry 1 of refreshing Fabric flagz.
+2017-11-07 18:41:18,011 ERROR [i.c.i.ServiceAccountOAuth2Credentials] [] [] [] : SpatialOS-internal error: Failed to refresh access token with token endpoint url: http://127.0.0.1:21000/auth/v1/token
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1316) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1291) ~[na:1.8.0_131]
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:77) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:972) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.executeUnparsed(TokenRequest.java:283) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.execute(TokenRequest.java:307) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.io.ServiceAccountOAuth2Credentials.refreshAccessToken(ServiceAccountOAuth2Credentials.scala:48) ~[fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.refresh(OAuth2Credentials.java:97) [fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.getRequestMetadata(OAuth2Credentials.java:74) [fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.getRequestMetadata(ClientAuthInterceptor.java:148) [fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.access$100(ClientAuthInterceptor.java:62) [fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor$1.checkedStart(ClientAuthInterceptor.java:94) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ClientInterceptors$CheckedForwardingClientCall.start(ClientInterceptors.java:194) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCall.start(ForwardingClientCall.java:47) [fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCall.start(MonitoringClientCall.java:36) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.startCall(ClientCalls.java:276) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.asyncUnaryRequestCall(ClientCalls.java:252) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.futureUnaryCall(ClientCalls.java:186) [fabric__runtime_deploy.jar:na]
+	at improbable.platform.inner.config.FabricFlagzServiceGrpc$FabricFlagzServiceFutureStub.list(FabricFlagzServiceGrpc.java:243) [fabric__runtime_deploy.jar:na]
+	at improbable.core.config.flagz.FlagzFieldRegistryUpdater.listAndWatch(FlagzFieldRegistryUpdater.java:129) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$0(FabricListeningExecutorService.java:133) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+2017-11-07 18:41:18,013 WARN  [i.c.c.f.FlagzFieldRegistryUpdater] [] [] [] : Failed to list Fabric flagz.
+java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: UNKNOWN
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:462) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.config.flagz.FlagzFieldRegistryUpdater.listAndWatch(FlagzFieldRegistryUpdater.java:130) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$0(FabricListeningExecutorService.java:133) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+Caused by: io.grpc.StatusRuntimeException: UNKNOWN
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ClientInterceptors$CheckedForwardingClientCall.start(ClientInterceptors.java:202) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCall.start(ForwardingClientCall.java:47) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCall.start(MonitoringClientCall.java:36) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.startCall(ClientCalls.java:276) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.asyncUnaryRequestCall(ClientCalls.java:252) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.futureUnaryCall(ClientCalls.java:186) ~[fabric__runtime_deploy.jar:na]
+	at improbable.platform.inner.config.FabricFlagzServiceGrpc$FabricFlagzServiceFutureStub.list(FabricFlagzServiceGrpc.java:243) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.config.flagz.FlagzFieldRegistryUpdater.listAndWatch(FlagzFieldRegistryUpdater.java:129) ~[fabric__runtime_deploy.jar:na]
+	... 12 common frames omitted
+Caused by: java.lang.RuntimeException: Failed to refresh access token with token endpoint url: http://127.0.0.1:21000/auth/v1/token
+	at improbable.core.io.ServiceAccountOAuth2Credentials.refreshAccessToken(ServiceAccountOAuth2Credentials.scala:59) ~[fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.refresh(OAuth2Credentials.java:97) ~[fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.getRequestMetadata(OAuth2Credentials.java:74) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.getRequestMetadata(ClientAuthInterceptor.java:148) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.access$100(ClientAuthInterceptor.java:62) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor$1.checkedStart(ClientAuthInterceptor.java:94) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ClientInterceptors$CheckedForwardingClientCall.start(ClientInterceptors.java:194) ~[fabric__runtime_deploy.jar:na]
+	... 19 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1316) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1291) ~[na:1.8.0_131]
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:77) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:972) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.executeUnparsed(TokenRequest.java:283) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.execute(TokenRequest.java:307) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.io.ServiceAccountOAuth2Credentials.refreshAccessToken(ServiceAccountOAuth2Credentials.scala:48) ~[fabric__runtime_deploy.jar:na]
+	... 25 common frames omitted
+2017-11-07 18:41:18,014 INFO  [i.c.c.f.FlagzFieldRegistryUpdater] [] [] [] : Exponential backoff of 1 seconds after retry 2 of refreshing Fabric flagz.
+2017-11-07 18:41:19,017 ERROR [i.c.i.ServiceAccountOAuth2Credentials] [] [] [] : SpatialOS-internal error: Failed to refresh access token with token endpoint url: http://127.0.0.1:21000/auth/v1/token
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1316) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1291) ~[na:1.8.0_131]
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:77) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:972) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.executeUnparsed(TokenRequest.java:283) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.execute(TokenRequest.java:307) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.io.ServiceAccountOAuth2Credentials.refreshAccessToken(ServiceAccountOAuth2Credentials.scala:48) ~[fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.refresh(OAuth2Credentials.java:97) [fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.getRequestMetadata(OAuth2Credentials.java:74) [fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.getRequestMetadata(ClientAuthInterceptor.java:148) [fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.access$100(ClientAuthInterceptor.java:62) [fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor$1.checkedStart(ClientAuthInterceptor.java:94) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ClientInterceptors$CheckedForwardingClientCall.start(ClientInterceptors.java:194) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCall.start(ForwardingClientCall.java:47) [fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCall.start(MonitoringClientCall.java:36) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.startCall(ClientCalls.java:276) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.asyncUnaryRequestCall(ClientCalls.java:252) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.asyncUnaryRequestCall(ClientCalls.java:237) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.asyncServerStreamingCall(ClientCalls.java:87) [fabric__runtime_deploy.jar:na]
+	at improbable.platform.deployment.NodeServiceGrpc$NodeServiceStub.list(NodeServiceGrpc.java:336) [fabric__runtime_deploy.jar:na]
+	at improbable.core.config.deployment.DeploymentNodesLister.listNodes(DeploymentNodesLister.java:59) [fabric__runtime_deploy.jar:na]
+	at improbable.core.discovery.global.GlobalStatusDiscovery.refreshGlobalStatusAsMaster(GlobalStatusDiscovery.java:210) [fabric__runtime_deploy.jar:na]
+	at improbable.core.discovery.global.GlobalStatusDiscovery.refreshGlobalStatus(GlobalStatusDiscovery.java:195) [fabric__runtime_deploy.jar:na]
+	at improbable.core.discovery.global.GlobalStatusDiscovery.refresh(GlobalStatusDiscovery.java:176) [fabric__runtime_deploy.jar:na]
+	at improbable.core.discovery.global.GlobalStatusDiscovery.lambda$startRefreshing$1(GlobalStatusDiscovery.java:160) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$0(FabricListeningExecutorService.java:133) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$ScheduledListeningDecorator$NeverSuccessfulListenableFutureTask.run(MoreExecutors.java:587) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+2017-11-07 18:41:19,021 WARN  [i.c.d.global.GlobalStatusDiscovery] [] [] [] : Failed to refresh global status discovery as master
+java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: UNKNOWN
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.discovery.global.GlobalStatusDiscovery.refresh(GlobalStatusDiscovery.java:176) [fabric__runtime_deploy.jar:na]
+	at improbable.core.discovery.global.GlobalStatusDiscovery.lambda$startRefreshing$1(GlobalStatusDiscovery.java:160) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$0(FabricListeningExecutorService.java:133) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$ScheduledListeningDecorator$NeverSuccessfulListenableFutureTask.run(MoreExecutors.java:587) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+Caused by: io.grpc.StatusRuntimeException: UNKNOWN
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:395) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ClientInterceptors$CheckedForwardingClientCall.start(ClientInterceptors.java:202) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCall.start(ForwardingClientCall.java:47) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCall.start(MonitoringClientCall.java:36) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.startCall(ClientCalls.java:276) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.asyncUnaryRequestCall(ClientCalls.java:252) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.asyncUnaryRequestCall(ClientCalls.java:237) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.asyncServerStreamingCall(ClientCalls.java:87) ~[fabric__runtime_deploy.jar:na]
+	at improbable.platform.deployment.NodeServiceGrpc$NodeServiceStub.list(NodeServiceGrpc.java:336) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.config.deployment.DeploymentNodesLister.listNodes(DeploymentNodesLister.java:59) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.discovery.global.GlobalStatusDiscovery.refreshGlobalStatusAsMaster(GlobalStatusDiscovery.java:210) [fabric__runtime_deploy.jar:na]
+	at improbable.core.discovery.global.GlobalStatusDiscovery.refreshGlobalStatus(GlobalStatusDiscovery.java:195) [fabric__runtime_deploy.jar:na]
+	... 11 common frames omitted
+Caused by: java.lang.RuntimeException: Failed to refresh access token with token endpoint url: http://127.0.0.1:21000/auth/v1/token
+	at improbable.core.io.ServiceAccountOAuth2Credentials.refreshAccessToken(ServiceAccountOAuth2Credentials.scala:59) ~[fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.refresh(OAuth2Credentials.java:97) ~[fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.getRequestMetadata(OAuth2Credentials.java:74) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.getRequestMetadata(ClientAuthInterceptor.java:148) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.access$100(ClientAuthInterceptor.java:62) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor$1.checkedStart(ClientAuthInterceptor.java:94) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ClientInterceptors$CheckedForwardingClientCall.start(ClientInterceptors.java:194) ~[fabric__runtime_deploy.jar:na]
+	... 21 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1316) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1291) ~[na:1.8.0_131]
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:77) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:972) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.executeUnparsed(TokenRequest.java:283) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.execute(TokenRequest.java:307) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.io.ServiceAccountOAuth2Credentials.refreshAccessToken(ServiceAccountOAuth2Credentials.scala:48) ~[fabric__runtime_deploy.jar:na]
+	... 27 common frames omitted
+2017-11-07 18:41:20,029 ERROR [i.c.i.ServiceAccountOAuth2Credentials] [] [] [] : SpatialOS-internal error: Failed to refresh access token with token endpoint url: http://127.0.0.1:21000/auth/v1/token
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1316) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1291) ~[na:1.8.0_131]
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:77) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:972) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.executeUnparsed(TokenRequest.java:283) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.execute(TokenRequest.java:307) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.io.ServiceAccountOAuth2Credentials.refreshAccessToken(ServiceAccountOAuth2Credentials.scala:48) ~[fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.refresh(OAuth2Credentials.java:97) [fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.getRequestMetadata(OAuth2Credentials.java:74) [fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.getRequestMetadata(ClientAuthInterceptor.java:148) [fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.access$100(ClientAuthInterceptor.java:62) [fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor$1.checkedStart(ClientAuthInterceptor.java:94) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ClientInterceptors$CheckedForwardingClientCall.start(ClientInterceptors.java:194) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCall.start(ForwardingClientCall.java:47) [fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCall.start(MonitoringClientCall.java:36) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.startCall(ClientCalls.java:276) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.asyncUnaryRequestCall(ClientCalls.java:252) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.futureUnaryCall(ClientCalls.java:186) [fabric__runtime_deploy.jar:na]
+	at improbable.platform.inner.config.FabricFlagzServiceGrpc$FabricFlagzServiceFutureStub.list(FabricFlagzServiceGrpc.java:243) [fabric__runtime_deploy.jar:na]
+	at improbable.core.config.flagz.FlagzFieldRegistryUpdater.listAndWatch(FlagzFieldRegistryUpdater.java:129) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$0(FabricListeningExecutorService.java:133) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+2017-11-07 18:41:20,030 WARN  [i.c.c.f.FlagzFieldRegistryUpdater] [] [] [] : Failed to list Fabric flagz.
+java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: UNKNOWN
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:462) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.config.flagz.FlagzFieldRegistryUpdater.listAndWatch(FlagzFieldRegistryUpdater.java:130) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$0(FabricListeningExecutorService.java:133) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+Caused by: io.grpc.StatusRuntimeException: UNKNOWN
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ClientInterceptors$CheckedForwardingClientCall.start(ClientInterceptors.java:202) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCall.start(ForwardingClientCall.java:47) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCall.start(MonitoringClientCall.java:36) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.startCall(ClientCalls.java:276) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.asyncUnaryRequestCall(ClientCalls.java:252) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.futureUnaryCall(ClientCalls.java:186) ~[fabric__runtime_deploy.jar:na]
+	at improbable.platform.inner.config.FabricFlagzServiceGrpc$FabricFlagzServiceFutureStub.list(FabricFlagzServiceGrpc.java:243) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.config.flagz.FlagzFieldRegistryUpdater.listAndWatch(FlagzFieldRegistryUpdater.java:129) ~[fabric__runtime_deploy.jar:na]
+	... 12 common frames omitted
+Caused by: java.lang.RuntimeException: Failed to refresh access token with token endpoint url: http://127.0.0.1:21000/auth/v1/token
+	at improbable.core.io.ServiceAccountOAuth2Credentials.refreshAccessToken(ServiceAccountOAuth2Credentials.scala:59) ~[fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.refresh(OAuth2Credentials.java:97) ~[fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.getRequestMetadata(OAuth2Credentials.java:74) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.getRequestMetadata(ClientAuthInterceptor.java:148) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.access$100(ClientAuthInterceptor.java:62) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor$1.checkedStart(ClientAuthInterceptor.java:94) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ClientInterceptors$CheckedForwardingClientCall.start(ClientInterceptors.java:194) ~[fabric__runtime_deploy.jar:na]
+	... 19 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1316) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1291) ~[na:1.8.0_131]
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:77) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:972) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.executeUnparsed(TokenRequest.java:283) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.execute(TokenRequest.java:307) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.io.ServiceAccountOAuth2Credentials.refreshAccessToken(ServiceAccountOAuth2Credentials.scala:48) ~[fabric__runtime_deploy.jar:na]
+	... 25 common frames omitted
+2017-11-07 18:41:20,030 INFO  [i.c.c.f.FlagzFieldRegistryUpdater] [] [] [] : Exponential backoff of 3 seconds after retry 3 of refreshing Fabric flagz.
+2017-11-07 18:41:20,030 ERROR [i.c.i.ServiceAccountOAuth2Credentials] [] [] [] : SpatialOS-internal error: Failed to refresh access token with token endpoint url: http://127.0.0.1:21000/auth/v1/token
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1316) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1291) ~[na:1.8.0_131]
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:77) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:972) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.executeUnparsed(TokenRequest.java:283) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.execute(TokenRequest.java:307) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.io.ServiceAccountOAuth2Credentials.refreshAccessToken(ServiceAccountOAuth2Credentials.scala:48) ~[fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.refresh(OAuth2Credentials.java:97) [fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.getRequestMetadata(OAuth2Credentials.java:74) [fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.getRequestMetadata(ClientAuthInterceptor.java:148) [fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.access$100(ClientAuthInterceptor.java:62) [fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor$1.checkedStart(ClientAuthInterceptor.java:94) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ClientInterceptors$CheckedForwardingClientCall.start(ClientInterceptors.java:194) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCall.start(ForwardingClientCall.java:47) [fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCall.start(MonitoringClientCall.java:36) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.startCall(ClientCalls.java:276) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.asyncUnaryRequestCall(ClientCalls.java:252) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.futureUnaryCall(ClientCalls.java:186) [fabric__runtime_deploy.jar:na]
+	at improbable.platform.inner.config.FabricWorkerFlagzServiceGrpc$FabricWorkerFlagzServiceFutureStub.list(FabricWorkerFlagzServiceGrpc.java:243) [fabric__runtime_deploy.jar:na]
+	at improbable.core.config.flagz.WorkerFlagzUpdater.listAndWatch(WorkerFlagzUpdater.java:143) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$0(FabricListeningExecutorService.java:133) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+2017-11-07 18:41:20,032 WARN  [i.c.config.flagz.WorkerFlagzUpdater] [] [] [] : Failed to list worker flagz.
+java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: UNKNOWN
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:462) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.config.flagz.WorkerFlagzUpdater.listAndWatch(WorkerFlagzUpdater.java:144) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$0(FabricListeningExecutorService.java:133) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+Caused by: io.grpc.StatusRuntimeException: UNKNOWN
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ClientInterceptors$CheckedForwardingClientCall.start(ClientInterceptors.java:202) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCall.start(ForwardingClientCall.java:47) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCall.start(MonitoringClientCall.java:36) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.startCall(ClientCalls.java:276) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.asyncUnaryRequestCall(ClientCalls.java:252) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls.futureUnaryCall(ClientCalls.java:186) ~[fabric__runtime_deploy.jar:na]
+	at improbable.platform.inner.config.FabricWorkerFlagzServiceGrpc$FabricWorkerFlagzServiceFutureStub.list(FabricWorkerFlagzServiceGrpc.java:243) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.config.flagz.WorkerFlagzUpdater.listAndWatch(WorkerFlagzUpdater.java:143) ~[fabric__runtime_deploy.jar:na]
+	... 12 common frames omitted
+Caused by: java.lang.RuntimeException: Failed to refresh access token with token endpoint url: http://127.0.0.1:21000/auth/v1/token
+	at improbable.core.io.ServiceAccountOAuth2Credentials.refreshAccessToken(ServiceAccountOAuth2Credentials.scala:59) ~[fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.refresh(OAuth2Credentials.java:97) ~[fabric__runtime_deploy.jar:na]
+	at com.google.auth.oauth2.OAuth2Credentials.getRequestMetadata(OAuth2Credentials.java:74) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.getRequestMetadata(ClientAuthInterceptor.java:148) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor.access$100(ClientAuthInterceptor.java:62) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.auth.ClientAuthInterceptor$1.checkedStart(ClientAuthInterceptor.java:94) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ClientInterceptors$CheckedForwardingClientCall.start(ClientInterceptors.java:194) ~[fabric__runtime_deploy.jar:na]
+	... 19 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_131]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1316) ~[na:1.8.0_131]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1291) ~[na:1.8.0_131]
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:77) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:972) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.executeUnparsed(TokenRequest.java:283) ~[fabric__runtime_deploy.jar:na]
+	at com.google.api.client.auth.oauth2.TokenRequest.execute(TokenRequest.java:307) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.io.ServiceAccountOAuth2Credentials.refreshAccessToken(ServiceAccountOAuth2Credentials.scala:48) ~[fabric__runtime_deploy.jar:na]
+	... 25 common frames omitted
+2017-11-07 18:41:20,032 INFO  [i.c.config.flagz.WorkerFlagzUpdater] [] [] [] : Exponential backoff of 1 seconds after retry 2 of refreshing worker flagz.
+2017-11-07 18:41:20,182 INFO  [i.c.discovery.ServiceDiscoveryImpl] [] [] [] : Shutting down all services
+2017-11-07 18:41:20,189 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.StatusDiscoveryInternalService) on 127.0.0.1:5301.
+2017-11-07 18:41:20,190 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.runtime.ModuleService) on 127.0.0.1:9000.
+2017-11-07 18:41:20,191 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.runtime.HealthCheckService) on 127.0.0.1:9001.
+2017-11-07 18:41:20,192 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.PerfInternalService) on 127.0.0.1:9002.
+2017-11-07 18:41:20,192 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.ContentionInternalService) on 127.0.0.1:9003.
+2017-11-07 18:41:20,193 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.runtime.FeatureService) on 127.0.0.1:9004.
+2017-11-07 18:41:20,194 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.NodeConfigurationInternalService) on 127.0.0.1:9005.
+2017-11-07 18:41:20,195 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.WorldExtentsInternalService) on 127.0.0.1:9006.
+2017-11-07 18:41:20,196 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.EntityIdInternalService) on 127.0.0.1:9007.
+2017-11-07 18:41:20,197 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.WorkerPrestartRegistryInternalService) on 127.0.0.1:9008.
+2017-11-07 18:41:20,198 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.RouterLookupInternalService) on 127.0.0.1:9009.
+2017-11-07 18:41:20,200 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.RouterInternalService) on 127.0.0.1:9010.
+2017-11-07 18:41:20,201 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.RemoteMessageInternalService) on 127.0.0.1:9011.
+2017-11-07 18:41:20,202 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.LocalBrokerInternalService) on 127.0.0.1:9012.
+2017-11-07 18:41:20,203 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.BridgeOracleInternalService) on 127.0.0.1:9013.
+2017-11-07 18:41:20,204 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.GlobalBrokerInternalService) on 127.0.0.1:9014.
+2017-11-07 18:41:20,205 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.BridgeServiceOracleInternalService) on 127.0.0.1:9015.
+2017-11-07 18:41:20,206 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.ScalingStatsInternalService) on 127.0.0.1:9016.
+2017-11-07 18:41:20,208 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.EntityQueryInternalService) on 127.0.0.1:9017.
+2017-11-07 18:41:20,209 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.BridgeInternalService) on 127.0.0.1:9018.
+2017-11-07 18:41:20,210 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.inner.worker.WorkerRunner) on 127.0.0.1:9019.
+2017-11-07 18:41:20,212 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.ReceptionistInternalService) on 127.0.0.1:9020.
+2017-11-07 18:41:20,212 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.runtime.ReceptionistService) on 127.0.0.1:7777.

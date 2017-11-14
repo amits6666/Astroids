@@ -62,10 +62,14 @@ namespace Assets.Gamelogic.Core
         public void MovePlayer()
         {
             var currentVelocity = myRigidbody.velocity;
+            
             var velocityChange = targetVelocity - currentVelocity;
             if (ShouldMovePlayerAuthoritativeClient(velocityChange))
+                
             {
-                transform.LookAt(myRigidbody.position + targetVelocity);
+                Vector3 dvector = velocityChange + targetVelocity;
+                dvector.x = 90f;
+                //transform.LookAt(dvector);
                 myRigidbody.AddForce(velocityChange, ForceMode.VelocityChange);
             }
         }

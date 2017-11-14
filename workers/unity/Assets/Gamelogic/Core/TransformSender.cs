@@ -38,7 +38,7 @@ namespace Assets.Gamelogic.Core
                 positionComponent.Send(new Position.Update().SetCoords(newPosition));
                 transformComponent.Send(new TransformComponent.Update().SetRotation(newRotation));
             }
-        }
+        } 
 
         private bool PositionNeedsUpdate(Coordinates newPosition)
         {
