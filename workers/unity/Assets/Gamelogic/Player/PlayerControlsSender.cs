@@ -1,3 +1,4 @@
+using System;
 using Assets.Gamelogic.Core;
 using Assets.Gamelogic.Utils;
 using Improbable.Player;
@@ -46,6 +47,11 @@ namespace Assets.Gamelogic.Player
         private bool ShouldUpdatePlayerControls(Vector3 newPosition)
         {
             return !MathUtils.CompareEqualityEpsilon(newPosition, playerControls.Data.targetPosition.ToVector3());
+        }
+
+        internal void SetMousePosition(Vector3 mousePos)
+        {
+            transformReceiverClientControllableAuthoritative.SetLookDirection(mousePos);
         }
     }
 }

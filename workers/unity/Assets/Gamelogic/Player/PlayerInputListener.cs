@@ -98,6 +98,8 @@ namespace Assets.Gamelogic.Player
             inputDirection.x = Input.GetAxis("Horizontal");
             inputDirection.z = Input.GetAxis("Vertical");
             playerControlsSender.SetInputDirection(inputDirection);
+            Vector3 mousePos = Input.mousePosition;
+            playerControlsSender.SetMousePosition(mousePos);
         }
         /*
         private void UpdateSpellControls()

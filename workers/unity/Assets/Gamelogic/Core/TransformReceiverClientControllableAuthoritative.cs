@@ -1,3 +1,4 @@
+using System;
 using Assets.Gamelogic.Utils;
 using Improbable.Core;
 using Improbable.Fire;
@@ -15,8 +16,9 @@ namespace Assets.Gamelogic.Core
         [Require] private Flammable.Reader flammable;
 
         private Vector3 targetVelocity;
-
+        private Vector3 mousePosition;
         [SerializeField] private Rigidbody myRigidbody;
+        
 
         private void Awake()
         {
@@ -57,6 +59,23 @@ namespace Assets.Gamelogic.Core
         private void FixedUpdate()
         {
             MovePlayer();
+            RotatePlayer();
+        }
+
+        public void RotatePlayer()
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                //Vector3 newMousePos = new Vector3(hit.point.x, 0, hit.point);
+                transform.LookAt(hit.point);
+            }
+        }
+
+        internal void SetLookDirection(Vector3 mousePos)
+        {
+            mousePosition = mousePos;
         }
 
         public void MovePlayer()

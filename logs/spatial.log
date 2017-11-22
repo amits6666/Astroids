@@ -1,32 +1,32 @@
-==========> Opened at 2017-11-14 18:42:42.7294488 +0200 IST
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = D:\spatialOS - unity -Projects\Astroids\workers\unity
-debug Found project root at D:\spatialOS - unity -Projects\Astroids
-debug Found version '12.0.3' in file D:\spatialOS - unity -Projects\Astroids\spatialos.json
-debug Skipping extraction of [C:\Users\Home\AppData\Local\.improbable\toolbelt\cache\worker_package\b37385002a3a53215c61ad7000300e537e9fd6dc\worker_sdk\12.0.3\core-dynamic-x86_64-win32.zip] to D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded category=success duration=0.0s
-==========> Opened at 2017-11-14 18:43:23.5047483 +0200 IST
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = D:\spatialOS - unity -Projects\Astroids\workers\unity
-debug Found project root at D:\spatialOS - unity -Projects\Astroids
-debug Found version '12.0.3' in file D:\spatialOS - unity -Projects\Astroids\spatialos.json
-debug Skipping extraction of [C:\Users\Home\AppData\Local\.improbable\toolbelt\cache\worker_package\ab5f4dd830be4d68018bde3add70880b775d9444\worker_sdk\12.0.3\core-dynamic-x86-win32.zip] to D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.0s category=success
-==========> Opened at 2017-11-14 18:43:24.2689259 +0200 IST
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = D:\spatialOS - unity -Projects\Astroids\workers\unity
-debug Found project root at D:\spatialOS - unity -Projects\Astroids
-debug Found version '12.0.3' in file D:\spatialOS - unity -Projects\Astroids\spatialos.json
-debug Skipping extraction of [C:\Users\Home\AppData\Local\.improbable\toolbelt\cache\worker_package\ab5f4dd830be4d68018bde3add70880b775d9444\worker_sdk\12.0.3\core-dynamic-x86-win32.zip] to D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.0s category=success
-==========> Opened at 2017-11-14 18:43:24.96938 +0200 IST
+==========> Opened at 2017-11-22 17:32:53.5394972 +0200 IST
 debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
 debug Current directory = D:\spatialOS - unity -Projects\Astroids\workers\unity
 debug Found project root at D:\spatialOS - unity -Projects\Astroids
 debug Found version '12.0.3' in file D:\spatialOS - unity -Projects\Astroids\spatialos.json
 debug Skipping extraction of [C:\Users\Home\AppData\Local\.improbable\toolbelt\cache\worker_package\b37385002a3a53215c61ad7000300e537e9fd6dc\worker_sdk\12.0.3\core-dynamic-x86_64-win32.zip] to D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
 info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.0s category=success
-==========> Opened at 2017-11-14 18:43:29.8378935 +0200 IST
+==========> Opened at 2017-11-22 17:34:02.1288482 +0200 IST
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = D:\spatialOS - unity -Projects\Astroids\workers\unity
+debug Found project root at D:\spatialOS - unity -Projects\Astroids
+debug Found version '12.0.3' in file D:\spatialOS - unity -Projects\Astroids\spatialos.json
+debug Skipping extraction of [C:\Users\Home\AppData\Local\.improbable\toolbelt\cache\worker_package\ab5f4dd830be4d68018bde3add70880b775d9444\worker_sdk\12.0.3\core-dynamic-x86-win32.zip] to D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.0s category=success
+==========> Opened at 2017-11-22 17:34:02.9074502 +0200 IST
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = D:\spatialOS - unity -Projects\Astroids\workers\unity
+debug Found project root at D:\spatialOS - unity -Projects\Astroids
+debug Found version '12.0.3' in file D:\spatialOS - unity -Projects\Astroids\spatialos.json
+debug Skipping extraction of [C:\Users\Home\AppData\Local\.improbable\toolbelt\cache\worker_package\ab5f4dd830be4d68018bde3add70880b775d9444\worker_sdk\12.0.3\core-dynamic-x86-win32.zip] to D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.0s category=success
+==========> Opened at 2017-11-22 17:34:03.6984625 +0200 IST
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = D:\spatialOS - unity -Projects\Astroids\workers\unity
+debug Found project root at D:\spatialOS - unity -Projects\Astroids
+debug Found version '12.0.3' in file D:\spatialOS - unity -Projects\Astroids\spatialos.json
+debug Skipping extraction of [C:\Users\Home\AppData\Local\.improbable\toolbelt\cache\worker_package\b37385002a3a53215c61ad7000300e537e9fd6dc\worker_sdk\12.0.3\core-dynamic-x86_64-win32.zip] to D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.0s category=success
+==========> Opened at 2017-11-22 17:34:09.0320548 +0200 IST
 debug Executing [spatial.exe build build-config UnityClient UnityWorker]
 debug Current directory = D:\spatialOS - unity -Projects\Astroids
 debug Found project root at D:\spatialOS - unity -Projects\Astroids
@@ -36,22 +36,22 @@ info Generating bridge settings for UnityClient.
 debug Worker 'UnityClient' defined at 'D:\spatialOS - unity -Projects\Astroids\workers\unity\spatialos.UnityClient.worker.json' has no managed launch configuration defined.
 info Generating bridge settings for UnityWorker.
 info Generating managed worker configuration for UnityWorker.
-info 'spatial.exe build build-config UnityClient UnityWorker' succeeded category=success duration=0.0s
-==========> Opened at 2017-11-14 18:43:49.8507939 +0200 IST
+info 'spatial.exe build build-config UnityClient UnityWorker' succeeded duration=0.0s category=success
+==========> Opened at 2017-11-22 17:34:29.9151894 +0200 IST
 debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
 debug Current directory = D:\spatialOS - unity -Projects\Astroids\workers\unity
 debug Found project root at D:\spatialOS - unity -Projects\Astroids
 debug Found version '12.0.3' in file D:\spatialOS - unity -Projects\Astroids\spatialos.json
 debug Skipping extraction of [C:\Users\Home\AppData\Local\.improbable\toolbelt\cache\worker_package\ab5f4dd830be4d68018bde3add70880b775d9444\worker_sdk\12.0.3\core-dynamic-x86-win32.zip] to D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.0s category=success
-==========> Opened at 2017-11-14 18:43:50.9176621 +0200 IST
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-22 17:34:31.0168207 +0200 IST
 debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
 debug Current directory = D:\spatialOS - unity -Projects\Astroids\workers\unity
 debug Found project root at D:\spatialOS - unity -Projects\Astroids
 debug Found version '12.0.3' in file D:\spatialOS - unity -Projects\Astroids\spatialos.json
 debug Skipping extraction of [C:\Users\Home\AppData\Local\.improbable\toolbelt\cache\worker_package\b37385002a3a53215c61ad7000300e537e9fd6dc\worker_sdk\12.0.3\core-dynamic-x86_64-win32.zip] to D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded category=success duration=0.0s
-==========> Opened at 2017-11-14 18:44:09.2175908 +0200 IST
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.0s category=success
+==========> Opened at 2017-11-22 17:34:39.0316717 +0200 IST
 debug Executing [spatial.exe prepare-for-run]
 debug Current directory = D:\spatialOS - unity -Projects\Astroids
 debug Found project root at D:\spatialOS - unity -Projects\Astroids
@@ -65,15 +65,15 @@ debug Skipping extraction of [C:\Users\Home\AppData\Local\.improbable\toolbelt\c
 debug In '', C:\Users\Home\AppData\Local\.improbable\toolbelt\tools\12.0.3\schema_compiler-x86_64-win32\schema_compiler.exe [--schema_path=D:\spatialOS - unity -Projects\Astroids\schema --schema_path=D:\spatialOS - unity -Projects\Astroids\build\dependencies\schema\standard_library --load_all_schema_on_schema_path]
 debug C:\Users\Home\AppData\Local\.improbable\toolbelt\tools\12.0.3\schema_compiler-x86_64-win32\schema_compiler.exe: No outputs specified, validating schema only.
 info No changes detected, skipping code generation.
-info 'spatial.exe prepare-for-run' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-14 18:44:59.5018205 +0200 IST
+info 'spatial.exe prepare-for-run' succeeded category=success duration=0.1s
+==========> Opened at 2017-11-22 17:35:23.0837898 +0200 IST
 debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
 debug Current directory = D:\spatialOS - unity -Projects\Astroids\workers\unity
 debug Found project root at D:\spatialOS - unity -Projects\Astroids
 debug Found version '12.0.3' in file D:\spatialOS - unity -Projects\Astroids\spatialos.json
 debug Skipping extraction of [C:\Users\Home\AppData\Local\.improbable\toolbelt\cache\worker_package\ab5f4dd830be4d68018bde3add70880b775d9444\worker_sdk\12.0.3\core-dynamic-x86-win32.zip] to D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded category=success duration=0.0s
-==========> Opened at 2017-11-14 18:45:00.6284217 +0200 IST
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.0s category=success
+==========> Opened at 2017-11-22 17:35:24.3917518 +0200 IST
 debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 D:\spatialOS - unity -Projects\Astroids\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
 debug Current directory = D:\spatialOS - unity -Projects\Astroids\workers\unity
 debug Found project root at D:\spatialOS - unity -Projects\Astroids
