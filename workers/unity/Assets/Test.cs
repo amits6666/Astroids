@@ -21,7 +21,7 @@ public class Test : MonoBehaviour {
         if (Physics.Raycast(ray, out hit))
         {
             transform.LookAt(hit.point);
-            transform.Rotate(90, 0, 0);
+            transform.Rotate(90, 0, 180);
           
         }
     }
