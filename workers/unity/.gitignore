@@ -1,7 +1,11 @@
-#Improbable Unity Ignores
+# Improbable Unity Ignores
+.spatialos/
+spatialos_worker_packages.json
 build.json
 .invoke.log
 zip_toolbelt.log
+external-default-unityclient.log
+external-default-unityworker.log
 Improbable.meta
 Assets/Improbable
 Assets/Plugins/Improbable
@@ -14,8 +18,6 @@ Assets/Gamelogic/Generated.meta
 Assembly-CSharp-Editor.csproj
 Assembly-CSharp-firstpass.csproj
 Assembly-CSharp.csproj
-spatialos.*.build.json
-*.log
 
 # Standard Unity Ignores
 /[Ll]ibrary/
@@ -50,4 +52,3 @@ sysinfo.txt
 
 .idea/
 .vs/
-/.spatialos

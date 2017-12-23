@@ -70,7 +70,8 @@ namespace Assets.Gamelogic.Core
             {
                 //Vector3 newMousePos = new Vector3(hit.point.x, 0, hit.point);
                 transform.LookAt(hit.point);
-            }
+                transform.Rotate(90, 0, 180);
+            } 
         }
 
         internal void SetLookDirection(Vector3 mousePos)
